@@ -101,6 +101,19 @@ module.exports = {
                     </block>`
                 }
             ]
+        },
+        {
+            name : 'SERVO',
+            color : '230',
+            icon : '/static/icons/icons8_disconnected_96px.png',
+            blocks : [
+                'esp32_servo_attach',
+                'esp32_servo_detach',
+                'esp32_servo_write',
+                'esp32_servo_write_micros',
+                'esp32_servo_read',
+                'esp32_servo_read_micros'
+            ]
         },        
         {
             name : 'Time',
