@@ -37,6 +37,9 @@ Blockly.JavaScript['esp32_servo_read_micros'] = function(block) {
 };
 */
 
+module.exports = function(Blockly) {
+  "use strict";
+
 Blockly.JavaScript['esp32_servo_attach'] = function(block) {
   var text_pin = block.getFieldValue('pin');
   var variable_instance = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('instance'), Blockly.Variables.NAME_TYPE);
@@ -78,3 +81,5 @@ Blockly.JavaScript['esp32_servo_read_micros'] = function(block) {
   var code = `${variable_instance}.readMicroseconds()`;
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
+
+}

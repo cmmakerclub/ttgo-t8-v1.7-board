@@ -94,6 +94,10 @@ Blockly.Blocks['esp32_servo_read_micros'] = {
 };
 */
 
+
+module.exports = function(Blockly) {
+  "use strict";
+
 Blockly.Blocks['esp32_servo_attach'] = {
   init: function() {
     this.appendDummyInput()
@@ -184,3 +188,5 @@ Blockly.Blocks['esp32_servo_read_micros'] = {
  this.setHelpUrl("");
   }
 };
+
+}
