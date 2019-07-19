@@ -108,7 +108,6 @@ module.exports = {
             icon : '/static/icons/icons8_disconnected_96px.png',
             blocks : [
                 'esp32_servo_attach',
-                'esp32_servo_detach',
                 'esp32_servo_write',
                 'esp32_servo_write_micros',
                 'esp32_servo_read',
@@ -521,7 +520,21 @@ module.exports = {
                         'serial_read_until',
                         'basic_string'
                     ]
-                }
+                },
+                {
+                    type : 'category',
+                    name : 'MQTT',
+                    icon : '/static/icons/mqtt.png',
+                    blocks : [
+                        'mqtt_block',
+                        'mqtt_connect_block',
+                        'mqtt_publish_block',
+                        'mqtt_subscribe_block',
+                        'mqtt_callback_block',
+                        'mqtt_condition_block',
+                        'mqtt_loop_block',
+                    ]
+                },
             ]
         }
     ]
